@@ -3,7 +3,7 @@
  */
 public class Producto {
 
-    private final String nombre
+    private final String nombre;
     private final double precio;
     private int stock;
 

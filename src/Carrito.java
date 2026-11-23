@@ -32,7 +32,9 @@ public class Carrito {
     public double totalConIva() {
         return subtotal() * (1 + IVA);
     }
-
+    public double totalConDescuento(double porcentaje) {
+        return totalConIva() * (1 - porcentaje / 100);
+    }
     public void mostrarTicket() {
         for (int i = 0; i < productos.size(); i++) {
             Producto p = productos.get(i);
